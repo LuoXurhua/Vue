@@ -1,4 +1,4 @@
-# lattevue5
+# lattevue
 
 ## Project setup
 ```

@@ -6,9 +6,16 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/home',
     name: 'home',
-    component: Home
+    component: Home,
+    children:[
+      {
+        path:'/home/buyCar',
+        name:'buyCar',
+        component: () => import('@/components/buyCar.vue')
+      }
+    ]
   },
   {
     path: '/about',
